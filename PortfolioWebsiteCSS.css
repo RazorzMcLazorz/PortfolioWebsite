@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+}
+Header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    position: fixed;
+    width: 100%;
+    top:0px;
+    overflow: hidden;
+    z-index: 2;
+}
+Header nav ul div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 120px;
+    
+}
+.Selected {
+    background-color: #ffac00;
+    -webkit-clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.NotSelected {
+    background-color: #ffac0090;
+    -webkit-clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+    
+}
+.Selected a{
+    text-decoration: none;
+    color: maroon;
+}
+.NotSelected a {
+    text-decoration: none;
+    color: maroon;
+}
+.NameBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+    height: 60px;
+    width: 320px;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    color: white;
+    font-size: 25px;
+    -webkit-clip-path: polygon(0 100%, 90% 100%, 100% 50%, 100% 50%, 90% 0, 0 0);
+    clip-path: polygon(0 100%, 90% 100%, 100% 50%, 100% 50%, 90% 0, 0 0);
+}
+.PreviewProjects {
+    display:flex;
+    float:right;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    height:400px;
+    width: 180px;
+    background-color: #fb7b61;
+    color: maroon;
+    padding-top: 10px;
+    font-size: 2em;
+    margin-right:15px;
+    border-radius: 15px;
+}
+.MyPhoto {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: circle(50.0% at 50% 50%);
+    clip-path: circle(50.0% at 50% 50%);
+    margin-left: 40%;
+    width: 50px;
+    animation: MyPhotoFrames linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    }
+    
+    @keyframes MyPhotoFrames{
+    0% {
+        transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+    15% {
+        transform:  translate(-25px,0px)  rotate(-5deg) ;
+    }
+    30% {
+        transform:  translate(20px,0px)  rotate(3deg) ;
+    }
+    45% {
+        transform:  translate(-15px,0px)  rotate(-3deg) ;
+    }
+    60% {
+        transform:  translate(10px,0px)  rotate(2deg) ;
+    }
+    75% {
+        transform:  translate(-5px,0px)  rotate(-1deg) ;
+    }
+    100% {
+        transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+}
+      
+.SummaryOfEducation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+    min-height: 200px;
+    max-height:100%;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+
+/* Projects */
+
+.Projectscentering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BestProjectPreview {
+    margin-top: 10%;
+    height: 600px;
+    width: 50%;
+    background-color: purple;
+}
+
+.LatestProjectPreview {
+    margin-top: 10%;
+    height: 400px;
+    width: 70%;
+    background-color: Orange;
+}
+
+.PastProjects {
+    margin-top: 10%;
+    height: 400px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+/* About Me */
+
+#AboutMeBackGround {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.WhatIKnow {
+    margin-top: 10%;
+    height: 200px;
+    width: 30%;
+    background-color: aqua;
+}
+
+.WhereILearnedEverything {
+    margin-top: 10%;
+    height: 200px;
+    width: 20%;
+    background-color: pink;
+}
+
+#ContactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    height: 60px;
+    width: 15%;
+    background-color: #fc6076;
+    text-decoration: none;
+    color: Maroon;
+    border-radius: 10px;
+    margin-bottom: 15%;
+}
+
+/* Contact Me */
+
+#ContactBackGround {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.ContactInfo {
+    margin-top: 10%;
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+    -webkit-clip-path: ellipse(33% 50% at 50% 50%);
+    clip-path: ellipse(33% 50% at 50% 50%);
+}
+
+#ContactVideo {
+    margin-top: 50px;
+    position: fixed;
+    right: 0;
+}
